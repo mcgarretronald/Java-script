@@ -8,10 +8,10 @@
 }
 {
     function fizzBuzz(n) {
-        if ((n % 3 == 0) && (n % 6 == 0)) {
+        if ((n % 3 == 0) && (n % 7 == 0)) {
             console.log("fizzBuzz");
         }
-        else if (n % 6 == 0) {
+        else if (n % 7 == 0) {
             console.log("fizz");
         }
         else if (n % 3 == 0) {
@@ -19,7 +19,7 @@
         }
         else { console.log(n); }
     }
-    fizzBuzz(54)
+    fizzBuzz(27)
 }
 // ASSIGNMENT 2
 {
@@ -47,3 +47,4 @@
     }
 
 }
+// 
