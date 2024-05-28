@@ -4,6 +4,7 @@
     sampleNumbers ="0123456789"
     sampleSpecial ="#\\|*&%^$£"
     sampleLetters ="qwertyuioplkjhgfdsazxcvbnm"
+    uppercase ="QWERTYUIOPLKJHGFDSAZXCVBNM"
 
 
     function checkpassword(password, regular) {
@@ -18,10 +19,11 @@
 
     function validatePassword(){
         let password = document.getElementById("password").value
-        if(checkpassword(password, sampleNumbers) && checkpassword(password, sampleSpecial)&& checkpassword(password,sampleLetters)){
+        if(checkpassword(password, sampleNumbers) && checkpassword(password, sampleSpecial)&&
+         checkpassword(password,sampleLetters)&&checkpassword(password,uppercase)){
             alert("Correct")
         }else{
-            alert("password must include numbers , special Characters and Letters ")
+            alert("password must include numbers , special Characters ,UPPERCASES, Letters ")
         }
     }
 
