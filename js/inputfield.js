@@ -3,7 +3,7 @@
     let button = document.getElementById("submitBtn")
     sampleNumbers ="0123456789"
     sampleSpecial ="#\\|*&%^$£"
-    sampleLetters ="qwertyuioplkjhgfdsazxcvbnm"
+    sampleLowercase ="qwertyuioplkjhgfdsazxcvbnm"
     uppercase ="QWERTYUIOPLKJHGFDSAZXCVBNM"
 
 
@@ -18,12 +18,17 @@
 
 
     function validatePassword(){
-        let password = document.getElementById("password").value
+        let password = document.getElementById("password")
+        password = password.value
+        let passborder= document.getElementById("password")
+      
         if(checkpassword(password, sampleNumbers) && checkpassword(password, sampleSpecial)&&
-         checkpassword(password,sampleLetters)&&checkpassword(password,uppercase)){
+         checkpassword(password,sampleLowercase)&&checkpassword(password,uppercase)){
             alert("Correct")
         }else{
-            alert("password must include numbers , special Characters ,UPPERCASES, Letters ")
+            passborder.style.borderColor="red"
+            alert("password must include numbers , special Characters ,UPPERCASES, lowercase ")
+        
         }
     }
 
