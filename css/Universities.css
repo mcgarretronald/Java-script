@@ -1,0 +1,36 @@
+.container{
+    border: 1px solid;
+    border-radius: 50px;
+    margin: 5%;
+    box-shadow: -4px 0px 118px -5px rgba(0,0,0,0.64);
+    -webkit-box-shadow: -4px 0px 118px -5px rgba(0,0,0,0.64);
+    -moz-box-shadow: -4px 0px 118px -5px rgba(0,0,0,0.64);
+    background-color: grey;
+        
+}
+h1{
+    font-size: 40px;
+    border-radius: 50px;
+    margin: 5% 5%;
+}
+
+button{
+    margin: 0% 20%  ;
+    padding: 20px 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+#input{
+    width: 80%;
+    margin: 5% 5%;
+    padding: 10px 50px;
+    
+}
+#data{
+   
+
+    margin: 2% 20%;
+}
